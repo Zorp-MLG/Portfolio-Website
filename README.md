@@ -14,4 +14,6 @@ which can help me with getting an job in the future.
 
 Bento is a Hackclub program which gives money for sushi for every hour you code.
 
-<img width="345" height="181" alt="image" src="https://github.com/user-attachments/assets/8346cc58-1d18-4642-aea9-987ba71d6b4a" />
+<img width="345" height="181" alt="Bento Logo" src="https://github.com/user-attachments/assets/8346cc58-1d18-4642-aea9-987ba71d6b4a" />
+
+
