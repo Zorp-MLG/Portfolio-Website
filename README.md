@@ -10,7 +10,7 @@
 I wanted to track my Portfolio/projects from the start,
 which can help me with getting an job in the future.
 
-# What is bento?
+# What is [Bento](https://bento.hackclub.com/)?
 
 Bento is a Hackclub program which gives money for sushi for every hour you code.
 
