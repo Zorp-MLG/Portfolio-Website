@@ -95,13 +95,13 @@ max-width: 450px;
     <p>Its <span id='sthlm-time'>...</span> o'clock!(for me)</p>
   
     <script>
-    fetch('https://gateway.timeapi.world/timezone/Europe/Stockholm')
+    fetch('https://timeapi.io/api/v1/time/current/zone?timezone=Europe%2FAmsterdam')
     .then (response => response.json())
     .then (data => {
 
-      const timeOnly = data.datetime.substring(11, 16);
-      document.getElementById('sthlm-time').textContent = timeOnly;
+        document.getElementById('sthlm-time').textContent = data.time;
     });
+  
     </script>
 
     
