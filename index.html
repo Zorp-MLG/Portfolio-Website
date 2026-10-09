@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+  
     <style>
       body {
         background-color: #f8f4e3; 
@@ -28,7 +29,6 @@ font-size: 30px;
 font-weight: 400;
 background-color: #f8f4e3;
 color: #0571d3;
-margin-bottom: 20px;
 box-shadow: 0 4px 6px #b0ada1;
 border-radius: 8px;
       }
@@ -46,30 +46,57 @@ font-size: 30px;
 font-weight: 400;
 background-color: #f8f4e3;
 color: #0571d3;
-margin-top: 20px;
 box-shadow: 0 4px 6px #b0ada1;
 border-radius: 8px;
       }
+.ButtonLayout
+{
+display: flex;
+align-items: center;
+gap: 10px;
 
+}
      
+.ContactInfo
+{
 
-
+box-shadow: #b0ada1;
+background-color: #e7e3d6;
+padding: 20px;
+margin-top: 30px;
+border-radius: 8px;
+max-width: 450px;
+}
       </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
     <img src="LOGO.png" />
-    <br />
-    <a class="button1" href="DLOGS.html">Developer logs</a>
-    <br />
-    <a class="button2" href="PORTFOLIO.html">Portfolio</a>
+    <div class="ButtonLayout">
+<a class="button1" href="DLOGS.html">Developer logs</a>
+ <a class="button2" href="PORTFOLIO.html">Portfolio</a>
+ </div>
+ <div class="ContactInfo">
     <h1>Contact info:</h1>
-    <br />
+  
     <h4>email: imsofreakingcooldude@gmail.com</h4>
-    <br />
+    
     <h4>discord: coolguyzorp</h4>
-    <br />
+  
     <h4>github: zorp-MLG</h4>
+    </div>
     <br />
-  </style>
-  </head>
+    <script>
+    fetch('https://gateway.timeapi.world/timezone/Europe/Stockholm')
+    .then (response => response.json())
+    .then (data => {
+
+      const timeOnly = data.datetime.substring(11, 16);
+      document.getElementById('sthlm-time').textContent = timeOnly;
+    });
+     </script>
+    <p>Its<span id='sthlm-time'>...</span>o'clock!(for me)</p>
+ 
+  </body>
 </html>
