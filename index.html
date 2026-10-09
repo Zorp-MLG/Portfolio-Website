@@ -67,7 +67,12 @@ margin-top: 30px;
 border-radius: 8px;
 max-width: 450px;
 }
-      </style>
+ .timeCon
+
+
+
+
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     </head>
@@ -87,6 +92,8 @@ max-width: 450px;
     <h4>github: zorp-MLG</h4>
     </div>
     <br />
+    <p>Its <span id='sthlm-time'>...</span> o'clock!(for me)</p>
+  
     <script>
     fetch('https://gateway.timeapi.world/timezone/Europe/Stockholm')
     .then (response => response.json())
@@ -95,8 +102,9 @@ max-width: 450px;
       const timeOnly = data.datetime.substring(11, 16);
       document.getElementById('sthlm-time').textContent = timeOnly;
     });
-     </script>
-    <p>Its<span id='sthlm-time'>...</span>o'clock!(for me)</p>
- 
+    </script>
+
+    
+  
   </body>
 </html>
